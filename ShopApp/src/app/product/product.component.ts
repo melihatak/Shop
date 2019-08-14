@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from './Product';
-
+declare let alertify: any;
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -13,7 +13,7 @@ export class ProductComponent implements OnInit {
   ngOnInit() {
   }
   title: "Product List"
-  filterText="";
+  filterText = "";
   products: Product[] =
     [
       { id: 1, name: "Laptop", price: 2500, description: "Asus ZenBook", imgUrl: "https://media.istockphoto.com/photos/using-blank-white-screen-laptop-picture-id992747452", categoryId: 1 },
@@ -28,4 +28,9 @@ export class ProductComponent implements OnInit {
       { id: 10, name: "Bisiklet", price: 600, description: "Cason", imgUrl: "https://media.istockphoto.com/photos/the-red-bicyclekrmz-bisiklet-picture-id891707536", categoryId: 5 }
 
     ]
+
+  AddToCart(product) {
+
+    alertify.success("added")
+  }
 }

@@ -1,0 +1,23 @@
+{
+
+"products":[
+{ "id": 1, "name": "Laptop",               "price": 2500,  "description": "Asus ZenBook", "imgUrl": "https://media.istockphoto.com/photos/using-blank-white-screen-laptop-picture-id992747452", categoryId: 1 },
+{ "id": 3, "name": "Mouse",                "price": 25,    "description": "A4 Tech",      "imgUrl": "https://media.istockphoto.com/photos/computer-mouse-isolated-on-white-picture-id1091778794", categoryId: 1 },
+{ "id": 5, "name": "Pride and Prejudice",  "price": 30,    "description": "Zen Book",     "imgUrl": "https://media.istockphoto.com/photos/textbooks-on-wooden-school-desk-with-chalkboard-picture-id1009498682", categoryId: 7 },
+{ "id": 7, "name": "Cips",                 "price": 5,     "description": "harras",       "imgUrl": "https://media.istockphoto.com/photos/close-up-of-banana-chips-from-kerala-cuisine-picture-id502624829", categoryId: 6 },
+{ "id": 8, "name": "Kola",                 "price": 3,     "description": "cococale",      "imgUrl": "https://media.istockphoto.com/photos/splashing-coke-soda-picture-id953699392", categoryId: 6 },
+{ "id": 9, "name": "Power Bank",           "price": 120,   "description": "Samsung ",      "imgUrl": "https://media.istockphoto.com/photos/powerbank-isolated-on-black-surface-picture-id1054368722", categoryId: 1 },
+{ "id":10, "name": "Bisiklet",             "price": 600,   "description": "Cason",         "imgUrl": "https://media.istockphoto.com/photos/the-red-bicyclekrmz-bisiklet-picture-id891707536", categoryId: 5 }
+
+],
+"categories":
+[  {"id":1, "name":"ELEKTRONİK"},
+   {"id":2, "name":"HEPSİMODA"},
+   {"id":3, "name":"EV,YAŞAM"},
+   {"id":4, "name":"OTO"},
+   {"id":5, "name":"SPOR"},
+   {"id":6, "name":"SÜPEMARKET"},
+   {"id":7, "name":"EĞLENCE"}
+]
+
+}

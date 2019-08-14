@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from './Product';
-declare let alertify: any;
+import { SelectControlValueAccessor } from '@angular/forms';
+import {AlertifyService} from '../services/alertify.service'
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -8,7 +9,7 @@ declare let alertify: any;
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  constructor(private alertifyService:AlertifyService) { }
 
   ngOnInit() {
   }
@@ -30,7 +31,6 @@ export class ProductComponent implements OnInit {
     ]
 
   AddToCart(product) {
-
-    alertify.success("added")
+this.alertifyService.Warning(product.name +" " +"added to card")
   }
 }

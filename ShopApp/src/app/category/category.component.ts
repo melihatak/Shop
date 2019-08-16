@@ -9,10 +9,10 @@ import { Observable } from 'rxjs'
   providers: [CategoryService]
 })
 export class CategoryComponent implements OnInit {
-  categories: Category[];
-
+  
   constructor(private categoryService: CategoryService) { }
 
+  categories: Category[];
   ngOnInit() {
     this.categoryService.getCategories().subscribe(data => { this.categories = data });
   }

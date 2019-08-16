@@ -29,6 +29,6 @@ export class ProductComponent implements OnInit {
   products: Product[];
 
   AddToCart(product) {
-    this.alertifyService.Warning(product.name + " " + "added to card")
+    this.alertifyService.Success(product.name + " " + "added to card")
   }
 }

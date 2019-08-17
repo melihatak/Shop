@@ -3,11 +3,14 @@
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" routerLink="/products">5TOGO</a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                    <a class="nav-link" routerLink="/login">
-<i class="fas fa-dolly"></i>                                           Login
-                    </a>
+                <a *ngIf="islogedIn()==false" class="nav-link" routerLink="/login">
+                    <i class="fas fa-dolly"></i> Login
+                </a> <a *ngIf="islogedIn()==true"class="nav-link" routerLink="/login" (click)="logOut()">
+                    <i class="fas fa-dolly"></i> LogOut
+                </a>
             </li>
         </ul>
+       
     </nav>
 
     <div class="container-fluid">
@@ -22,7 +25,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="/product-add-1" >
+                            <a class="nav-link" routerLink="/product-add-1">
                                 <span data-feather="file"></span>
                                 Ürün Ekle/Klasik Form
                             </a>
